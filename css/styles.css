@@ -1,0 +1,262 @@
+/*******************************************/
+/*****************Global********************/
+/*******************************************/
+body {
+  font-family: 'Lexend', sans-serif;
+  color:white;
+  background:#001100;
+}
+/* Boutons */
+.btn{
+  font-weight: 400;
+  padding: 20px 30px;
+  border-radius: 50px;
+  transition: .3s all ease-in-out;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.btn:hover{
+  opacity: 0.75;
+}
+.btn--pink{
+  font-size: 12px;
+  background-color: #ec0988;
+  color: #001100 !important;
+}
+.btn--white{
+  background: #fff;
+}
+/*******************************************/
+/*****************Main nav******************/
+/*******************************************/
+/* Fond */
+.main-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #001100;
+  padding: 20px 50px;
+  z-index: 1;
+}
+/* Wrapper pour haute rés */
+.wrapper-nav{
+  max-width: 1800px;
+}
+/* image */
+.main-nav img{
+  width: 200px;
+  margin-right: 50px;
+}
+/* Deux parties en inline-blocks */
+.wrapper-nav div{
+  display: inline-block;
+}
+/* Tailles des deux parties */
+.wrapper-nav div:nth-of-type(1){
+  width: 70%;
+}
+.wrapper-nav div:nth-of-type(2){
+  text-align: right;
+  width: 30%;
+}
+/* Mise en forme des liens */
+.main-nav a{
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+.wrapper-nav div a:not(:last-child){
+  margin-right: 20px;
+}
+/*******************************************/
+/*****************Header********************/
+/*******************************************/
+/* Global */
+.header{
+  background: url('../img/bg_header.jpg') center top/cover;
+  position: relative;
+}
+/* Home page header */
+.homepage .header{
+  height: 100vh;
+}
+/* Swag page header */
+.swag .header{
+  height: 65vh;
+}
+/* Mise en forme */
+.header h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-transform: uppercase;
+  font-size: 55px;
+  text-align: center;
+}
+.header h1 span{
+  display: block;
+  font-size: 35px;
+  margin-top: 40px;
+}
+/*******************************************/
+/*****************Footer********************/
+/*******************************************/
+.footer{
+  padding: 100px 0 150px;
+}
+.footer .wrapper{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.footer section{
+  display: inline-block;
+  vertical-align: top;
+}
+.footer section:nth-of-type(1){
+  width: 25%;
+}
+.footer section:nth-of-type(2){
+  width: 55%;
+}
+.footer section:nth-of-type(3){
+  width: 20%;
+}
+.footer h3{
+  margin-top: 0;
+}
+.footer section address, .footer section div{
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 40px;
+}
+.footer section div{
+  text-transform: uppercase;
+}
+.footer section address{
+  font-style: normal;
+}
+small{
+  display: block;
+  text-align: center;
+  margin-top: 100px;
+}
+/*******************************************/
+/*****************Homepage******************/
+/*******************************************/
+
+/** Main section */
+/* Espace autour */
+.sections {
+  padding: 3vw;
+}
+/* Global backround, inline-block, mise en forme 
+calcul pour width (-margin-right) */
+.sections > a{
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: calc(50% - 5px);
+  height: 50vw;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 22px;
+  position: relative;
+}
+.sections > a:nth-of-type(odd){
+  margin-right: 10px;
+}
+/* Transition */
+.sections section {
+  transition:.2s all ease-in-out;
+}
+/* Disparait au survol */
+.sections > a:hover section  {
+  opacity:0;
+}
+/* Fond gradient sections */
+.sections section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;  
+  background: linear-gradient(137deg, rgba(80,172,180,0.20445272835696782) 0%, rgba(236,9,136,0.4005311597295168) 100%);
+}
+/* Images de fond des sections */
+.section__reservation {
+  background-image:url('../img/img-1.jpg')
+}
+.section__menu {
+  background-image:url('../img/img-2.jpg')
+}
+.section__jobs {
+  background-image:url('../img/img-3.jpg')
+}
+.section__events {
+  background-image:url('../img/img-4.jpg')
+}
+.section__team {
+  background-image:url('../img/img-5.jpg')
+}
+.section__gift {
+  background-image:url('../img/img-6.jpg')
+}
+/* Position h2 */
+.sections h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  white-space: nowrap;
+  /* width: 100%;
+  text-align: center; */
+}
+/** Mailing list section */
+/* Fond + centrage contenu */
+.mailing-list{
+  background: #ec0988;
+  padding: 100px 0;
+}
+/* Mise en forme */
+.mailing-list h2{
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+.mailing-list p{
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+form{
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+}
+[type="email"] {
+  padding:20px;
+  border:0;
+  font-weight: 200;
+  font-size: 14px;
+  margin-right: 15px;
+  width: 250px;
+  outline: 0;
+}
+/*******************************************/
+/*****************Swag Page*****************/
+/*******************************************/
+
+/*******************************************/
+/*****************Burger Menu***************/
+/*******************************************/
+
+/*******************************************/
+/*****************Responsive****************/
+/*******************************************/
